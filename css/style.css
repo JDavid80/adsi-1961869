@@ -1,3 +1,17 @@
 h1 {
     text-align: center;
 }
+div#catalogo-main {
+    width: 90%;
+    background-color: gainsboro;
+    /* display: block; */
+    margin: 0 auto 0 auto;
+}
+div.content-img, div.catalogo-inicio {
+    float: left;
+    width: 16%;
+    margin-right: 0.57%;
+}
+.catalogo-inicio {
+    margin-left: 0.57%;
+}
