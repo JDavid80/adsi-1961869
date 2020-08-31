@@ -1,6 +1,17 @@
+h1 {
+    text-align: center;
+}
 div#catalogo-main {
     width: 100%;
 }
-img.content-img {
+div.content-img {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    background-color: darkgray;
+}
+img.catalogo {
+    width: 95%;
     display: block;
+    margin: 0 auto 0 auto;
+    margin-bottom: 1.3em;
 }
