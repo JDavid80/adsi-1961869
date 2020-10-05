@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+div#main-retos {
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    margin: 0 auto;
+}

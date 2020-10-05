@@ -33,15 +33,16 @@ nav a {
     float: left;
     width: 170px;
 }
+nav a:hover {
+    background: rgba(0,0,0,.5);
+}
+/* Segundo Nivel */
 nav li li {
     background: rgb(0, 120, 150);
     width: 220px;
     overflow: hidden;
     max-height: 0;
     transition: all .5s;
-}
-nav a:hover {
-    background: rgba(0,0,0,.5);
 }
 nav li:hover > ul > li {
     max-height: 500px;
@@ -50,6 +51,7 @@ nav li:hover > ul > li {
 .menu > li > ul {
     top: 100%;
 }
+/* Tercer Nivel */
 .menu ul ul {
     left: 100%;
     top: 0%;
