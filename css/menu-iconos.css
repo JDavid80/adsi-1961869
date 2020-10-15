@@ -1,5 +1,44 @@
+body {
+    background: #252528;
+    color: rgba(255, 255, 255, .4);
+    font-family: 'Lato', sans-serif;
+    padding: 0 1em;
+}
 h1 {
-    text-align: center;
+    text-align: right;
+    color: rgba(255, 255, 255, .7);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+nav {
+    background: rgba(0,0,0,.8);
+    /* Evitar que la caja se expanda */
+    box-sizing: border-box;
+    position: absolute;
+    /* Conseguir que el menú se esconda por defecto*/
+    left: -18em;
+    padding-top: 3em;
+    top: 0;
+    height: 100%;
+    /* El menú debe quedar por debajo del toggle(ícono hamburguesa) */
+    z-index: 5;
+}
+.menu {
+    list-style: none;
+    line-height: 42px;
+    margin: 2em auto;
+    padding-left: 0;
+    width: 18em;
+}
+.menu a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+}
+.menu li a span {
+    margin-left: 9px;
 }
 a {
     text-decoration: none;
@@ -11,6 +50,31 @@ li {
     margin-left: 20px;
     margin-bottom: 20px;
 }
-span.margen-izquierdo {
+li.items {
+    color: whitesmoke;
+}
+span {
     padding: 15px;
+    color: whitesmoke;
+}
+.fa-bars {
+    color: whitesmoke;
+}
+.fas {
+    color: whitesmoke;
+}
+.fab {
+    color: whitesmoke;
+}
+nav.mostrar {
+    left: 0;
+}
+#mostrar-nav > label {
+    cursor: pointer;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    /* El ícono hamburguesa queda por encima del menú */
+    z-index: 10;
+    font-size: 1.3em;
 }
