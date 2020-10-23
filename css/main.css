@@ -34,19 +34,18 @@ header nav ul li {
 }
 header nav ul li:hover {
     background: rgb(191,0,6);
-   /*  color: white; */
-}
-header nav ul li a {
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 20px;
 }
 header nav ul li:hover .children {
     display: block;
     width: 180%;
     text-align: left;
     z-index: 20;
+}
+header nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
 }
 header nav ul li .children {
     display: none;
