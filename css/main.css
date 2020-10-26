@@ -12,6 +12,9 @@ h1 {
     top: 13px;
     left: 20px;
 }
+.menu_bar {
+    display: none;
+}
 body {
     background: #fefefe;
 }
@@ -32,15 +35,18 @@ header nav ul li {
     display: inline-block;
     position: relative;
 }
-header nav ul li:hover {
-    background: rgb(191,0,6);
+header nav ul li a span {
+    margin-right: 10px;
 }
-header nav ul li:hover .children {
+/* header nav ul li:hover {
+    background: rgb(191,0,6);
+} */
+/* header nav ul li:hover .children {
     display: block;
     width: 180%;
     text-align: left;
     z-index: 20;
-}
+} */
 header nav ul li a {
     color: white;
     display: block;
@@ -57,19 +63,72 @@ header nav ul li .children {
     text-align: justify;
 }
 @media screen and (max-width: 768px) {
+    body {
+        padding-top: 69px; 
+    }
+    .titulo {
+        display: none;
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background:rgb(222,1,8);
+    }
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: 38px;
+    }
     header nav {
         width: 80%;
         position: fixed;
-        right: 75%;
+        right: 100%;
         height: calc(100% - 80px);
-        background: whitesmoke;
+        background: rgb(230,230,230);
+        margin: 0;
+        overflow: scroll;
     }
     header nav ul li {
         display: block;
+        border: 1px solid rgba(255,255,255,.5);
+    }
+    header nav ul li:hover {
+        background: white;
     }
     header nav ul li a {
+        padding: 12px;
         display: block;
-        color: rgb(222,1,8);
+        text-align: left;
+        color: rgb(64,64,64);
+    }
+    header nav ul li a:hover {
+        padding: 12px;
+        background: white;
+        color: black;
+    }
+    header nav ul li .children {
+        width: 100%;
+        background: gainsboro;
+        color: white;
+        position: relative;
+    }
+    header nav ul li .children a {
+        margin-left: 20px;
+    }
+    header nav ul li .icon-chevron-small-down {
+        float: right;
+        top: 3px;
+        margin-left: 10px;
+        margin-right: 0;
     }
 }
 
