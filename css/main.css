@@ -35,6 +35,12 @@ header nav ul li {
     display: inline-block;
     position: relative;
 }
+header nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
 header nav ul li a span {
     margin-right: 10px;
 }
@@ -47,16 +53,16 @@ header nav ul li a span {
     text-align: left;
     z-index: 20;
 } */
-header nav ul li a {
-    color: white;
-    display: block;
-    text-decoration: none;
-    padding: 20px;
-}
 header nav ul li .children {
     display: none;
-    background: #011826;
+    width: 150%;
+    background: gainsboro;
     position: absolute;
+    color: rgb(64,64,64);
+}
+header nav ul li .childre li {
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.5)
 }
 .main-content {
     margin: 2em;
