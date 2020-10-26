@@ -56,14 +56,19 @@ header nav ul li a span {
 header nav ul li .children {
     display: none;
     width: 150%;
-    background: gainsboro;
+    background: rgb(230,230,230);
     position: absolute;
-    color: rgb(64,64,64);
+    text-align: left;
 }
-header nav ul li .childre li {
+header nav ul li .children li {
     display: block;
-    border-bottom: 1px solid rgba(255,255,255,.5)
+    border: 1px solid rgba(255,255,255,.5);
 }
+header nav ul li .children li a {
+    display: block;
+    color:rgb(64,64,64);
+    
+};
 .main-content {
     margin: 2em;
     text-align: justify;
@@ -135,6 +140,10 @@ header nav ul li .childre li {
         top: 3px;
         margin-left: 10px;
         margin-right: 0;
+    }
+    .main-content {
+        margin: 2em;
+        text-align: justify;
     }
 }
 
