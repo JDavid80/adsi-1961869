@@ -1,0 +1,13 @@
+body {
+ margin: 1.5em;
+}
+h1 {
+    text-align: center;
+}
+img {
+    width: 200px;
+    height: 112px;
+}
+.margen-botones {
+    margin: 5px;
+}
